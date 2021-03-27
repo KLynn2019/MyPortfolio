@@ -2,16 +2,31 @@
 
 .container {
   border-radius: 20px;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 body {
-  background-image: linear-gradient(to bottom, rgba(0, 255, 55, 0.5), rgba(1, 1, 70, 0.5)),url(images/sitebkgd.jpg);
+  background-image: linear-gradient(to bottom, rgba(1, 1, 70, 0.5), rgba(255, 255, 255, 0.3)),url(images/sitebkgd.jpg);
 }
 
 @media (max-width: 991px) {
   body {
     background-image: none;
   }
+
+  .container {
+    padding: 30px;
+  }
+}
+
+i {
+  color: indigo;
+  font-size: 24px;
+}
+
+hr {
+  border: 1px inset rgba(27, 109, 45, 0.5);
 }
 
 /* nav */
@@ -26,8 +41,15 @@ body {
 
 .heroimg {
   display: flex;
-  border-radius: 50px;
+  background-color: indigo;
+  border-radius: 50%;
   margin: 0 auto;
+}
+
+.herobtn {
+  background-color: rgba(27, 109, 45);
+  color: #fff;
+  font-weight: 600;
 }
 
 @media (max-width: 767px) {
@@ -43,12 +65,13 @@ body {
     display: flex;
   }
 
-  .projorder img {
-    width: 50%;
-  }
+/*   .projorder img {
+    margin-right: 20px;
+  } */
 
   .projdir {
     flex-direction: column;
+    margin-left: 20px;
   }
 }
 
@@ -59,9 +82,10 @@ body {
 }
 
 .testartcl {
-  border: 1px solid gray;
+  border: 1px inset rgba(27, 109, 45);
   border-radius: 10px;
   justify-content: space-between;
+  height: 250px;
 }
 
 .testimg {
@@ -72,27 +96,43 @@ body {
 }
 
 .testtext {
+  padding: 0 15px;
+}
+
+.testtxt2 {
   font-style: italic;
+}
+
+@media (max-width: 991px) {
+  .testartcl {
+    height: 350px;
+  }
 }
 
 @media (max-width: 767px) {
   .testspc {
     padding-bottom: 50px;
   }
+
+  .testartcl {
+    height: 275px;
+  }
+
 }
 
 /* fun facts */
 
 .funspc {
-  justify-content: space-between;
   text-align: center;
   vertical-align: middle;
   border: 1px solid gray;
   border-radius: 10px;
+  height: 200px;
+  margin: 0 auto;
 }
 
 .funspc i {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .funspc p {
@@ -103,7 +143,6 @@ body {
 /* footer */
 
 footer {
-  background: gray;
   margin: 0 -15px;
   height: 50px;
 }
