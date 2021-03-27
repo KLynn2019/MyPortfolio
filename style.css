@@ -1,0 +1,132 @@
+/* General styles */
+
+.container {
+  border-radius: 20px;
+}
+
+body {
+  background-image: linear-gradient(to bottom, rgba(0, 255, 55, 0.5), rgba(1, 1, 70, 0.5)),url(images/sitebkgd.jpg);
+}
+
+@media (max-width: 991px) {
+  body {
+    background-image: none;
+  }
+}
+
+/* nav */
+
+@media (max-width: 767px) {
+  .navname {
+    display: none;
+  }
+}
+
+/* hero */
+
+.heroimg {
+  display: flex;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .herotitle {
+    text-align: center;
+  }
+}
+
+/* projects */
+
+@media (max-width: 767px) {
+  .projorder {
+    display: flex;
+  }
+
+  .projorder img {
+    width: 50%;
+  }
+
+  .projdir {
+    flex-direction: column;
+  }
+}
+
+/* testimonials */
+
+.testspc {
+  padding: 0 30px;
+}
+
+.testartcl {
+  border: 1px solid gray;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.testimg {
+  width: 100px;
+  border-radius: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+.testtext {
+  font-style: italic;
+}
+
+@media (max-width: 767px) {
+  .testspc {
+    padding-bottom: 50px;
+  }
+}
+
+/* fun facts */
+
+.funspc {
+  justify-content: space-between;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.funspc i {
+  font-size: 24px;
+}
+
+.funspc p {
+  font-size: 40px;
+  color: gray;
+}
+
+/* footer */
+
+footer {
+  background: gray;
+  margin: 0 -15px;
+  height: 50px;
+}
+
+.footsocial {
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+.footcopy {
+  padding-right: 30px;
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100px;
+  }
+
+  .footsocial, .footcopy {
+    text-align: center;
+  }
+}
